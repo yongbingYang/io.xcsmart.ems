@@ -1,5 +1,7 @@
 {
   "name": "io.xcsmart.ems",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
