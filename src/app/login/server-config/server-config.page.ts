@@ -25,9 +25,14 @@ export class ServerConfigPage implements OnInit {
 
   }
 
-  QRScan() {
+  qrScan() {
     const serverConfig = '/qr-scanner';
     this.navController.navigateRoot(serverConfig);
+  }
+
+  saveServerConfig() {
+    this.localStorage.set('serverRootUrl', this.serverUrl);
+    this.navController.navigateForward('');
   }
 
 }

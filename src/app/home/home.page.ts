@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  public functionList: any[] = [];
+
+
+  constructor() {
+    for (let i = 0; i < 8; i++) {
+      this.functionList.push({
+        functionName: 'Name' + i,
+        routeLink: '/tabs/message',
+        description: 'Description' + i
+      });
+    }
+  }
 
   ngOnInit() {
   }

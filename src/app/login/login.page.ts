@@ -40,6 +40,8 @@ export class LoginPage implements OnInit {
 
     const successUrl = '/tabs/home';
 
+    this.navController.navigateRoot(successUrl);
+
     if (this.userinfo.username === '') {
       alert('用户名不能为空');
     } else if (this.userinfo.password.length < 6) {

@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-buttons slot="start">
+      金辰智慧工厂·主页
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <img class="logo_img" src="../../assets/favicon.ico" alt="">
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  
+
+  <div class="functionList">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="border: 0.05rem solid #eee;" size="3" *ngFor="let item of functionList"
+          [routerLink]="[item.routeLink]">
+          <div class="functionlist_inner">
+
+            {{item.functionName}}
+
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
