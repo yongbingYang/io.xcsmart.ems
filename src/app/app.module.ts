@@ -24,7 +24,8 @@ import { QRScanner } from '@ionic-native/qr-scanner/ngx';
   entryComponents: [],
   imports: [BrowserModule,
     IonicModule.forRoot({
-      backButtonText: 'Back'
+      backButtonText: '',
+      backButtonIcon: 'arrow-back'
     }),
     AppRoutingModule,
     HttpClientModule],

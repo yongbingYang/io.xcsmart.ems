@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactPage implements OnInit {
 
-  constructor() { }
+
+  public userInfo: any;
+
+  constructor() {
+    this.userInfo = {
+      name: '王大壮',
+      loginId: 'device001',
+      roleName: '设备管理员',
+      department: '设备部',
+      phoneNumber: '110'
+    };
+  }
 
   ngOnInit() {
   }

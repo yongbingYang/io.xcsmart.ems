@@ -11,13 +11,19 @@ export class HomePage implements OnInit {
 
 
   constructor() {
-    for (let i = 0; i < 8; i++) {
-      this.functionList.push({
-        functionName: 'Name' + i,
-        routeLink: '/tabs/message',
-        description: 'Description' + i
-      });
-    }
+
+    this.functionList.push({
+      functionName: '工厂建模',
+      routeLink: '/tabs/home',
+      description: 'Description'
+    });
+
+    this.functionList.push({
+      functionName: '设备管理',
+      routeLink: '/ems/equipment-management',
+      description: 'Description'
+    });
+
   }
 
   ngOnInit() {

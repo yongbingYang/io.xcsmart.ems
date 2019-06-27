@@ -1,0 +1,32 @@
+ion-grid,
+ion-row,
+ion-col {
+  margin: 0%;
+  padding: 0%;
+}
+
+ion-row,
+ion-col {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.userName {
+  margin: 0;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.circleName {
+  border: 0.05rem solid royalblue;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  margin: 0 auto;
+  border-radius: 10rem;
+
+  ion-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}

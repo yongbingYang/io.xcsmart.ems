@@ -33,6 +33,15 @@ const routes: Routes = [
             loadChildren: '../contact/contact.module#ContactPageModule'
           }
         ]
+      },
+      {
+        path: 'ems',
+        children: [
+          {
+            path: '',
+            loadChildren: '../ems/ems.module#EmsPageModule'
+          }
+        ]
       }
     ]
   },

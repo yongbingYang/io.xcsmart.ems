@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>设置</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-button expand="block" [routerLink]="['/modify-password']">修改密码</ion-button>
+
+    <ion-button color="danger" expand="block" [routerLink]="['/']">退出登录</ion-button>
+  </div>
+</ion-content>
