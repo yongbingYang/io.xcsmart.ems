@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contact-person',
-  templateUrl: './contact-person.page.html',
-  styleUrls: ['./contact-person.page.scss'],
+  selector: 'app-me',
+  templateUrl: './me.page.html',
+  styleUrls: ['./me.page.scss'],
 })
-export class ContactPersonPage implements OnInit {
+export class MePage implements OnInit {
 
   public userInfo: any;
 
@@ -16,11 +16,11 @@ export class ContactPersonPage implements OnInit {
       loginId: 'device001',
       roleName: '设备管理员',
       department: '设备部',
-      email: '9999@qq.com',
-      phoneNumber: '110',
+      phoneNumber: '110'
     };
 
   }
+
   ngOnInit() {
   }
 

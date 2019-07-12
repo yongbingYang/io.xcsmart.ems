@@ -12,7 +12,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../home/home.module#HomePageModule'
+            loadChildren: '../tabs/home/home.module#HomePageModule'
           }
         ]
       },
@@ -21,34 +21,20 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../message/message.module#MessagePageModule'
+            loadChildren: '../tabs/message/message.module#MessagePageModule'
           }
         ]
       },
       {
-        path: 'contact',
+        path: 'me',
         children: [
           {
             path: '',
-            loadChildren: '../contact/contact.module#ContactPageModule'
-          }
-        ]
-      },
-      {
-        path: 'ems',
-        children: [
-          {
-            path: '',
-            loadChildren: '../ems/ems.module#EmsPageModule'
+            loadChildren: '../tabs/me/me.module#MePageModule'
           }
         ]
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/home',
-    pathMatch: 'full'
   }
 ];
 

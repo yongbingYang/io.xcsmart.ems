@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>金辰智慧工厂·我的信息</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card [routerLink]="[ '/contact/contact-person',{loginId:userInfo.loginId}]">
+    <ion-card-header>
+      <ion-card-title>{{userInfo.name}}</ion-card-title>
+      <ion-card-subtitle>帐号：{{userInfo.loginId}}</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-item [routerLink]="[ '/contact/contact-setting' ]" class="activated">
+      <ion-icon name="settings" slot="start"></ion-icon>
+      <ion-label>设置</ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

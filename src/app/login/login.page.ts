@@ -41,6 +41,7 @@ export class LoginPage implements OnInit {
     const successUrl = '/tabs/home';
 
     this.navController.navigateRoot(successUrl);
+    return;
 
     if (this.userinfo.username === '') {
       alert('用户名不能为空');
